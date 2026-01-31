@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Star, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const tours = [
     {
+        id: "maldives-honeymoon",
         image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Luxury Honeymoon in Maldives",
         price: "BDT 120,000",
@@ -11,6 +13,7 @@ const tours = [
         rating: 4.9
     },
     {
+        id: "thailand-adventure",
         image: "https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Family Adventure in Thailand",
         price: "BDT 55,000",
@@ -18,6 +21,7 @@ const tours = [
         rating: 4.8
     },
     {
+        id: "dubai-safari",
         image: "https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Dubai City & Desert Safari",
         price: "BDT 85,000",
@@ -72,9 +76,9 @@ const FeaturedTours = () => {
                                         <span className="text-sm text-gray-500">Starting from</span>
                                         <p className="text-2xl font-bold text-primary">{tour.price}</p>
                                     </div>
-                                    <button className="bg-slate-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-primary transition-colors">
+                                    <Link to={`/package/${tour.id}`} className="bg-slate-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-primary transition-colors">
                                         Book Now
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>
