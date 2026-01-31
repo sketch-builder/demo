@@ -6,21 +6,21 @@ const tours = [
     {
         image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Luxury Honeymoon in Maldives",
-        price: "$1,200",
+        price: "BDT 120,000",
         duration: "5 Days",
         rating: 4.9
     },
     {
         image: "https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Family Adventure in Thailand",
-        price: "$950",
+        price: "BDT 55,000",
         duration: "7 Days",
         rating: 4.8
     },
     {
         image: "https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
         title: "Dubai City & Desert Safari",
-        price: "$850",
+        price: "BDT 85,000",
         duration: "4 Days",
         rating: 4.9
     }
